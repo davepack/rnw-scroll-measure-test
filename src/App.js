@@ -17,7 +17,6 @@ export default class App extends React.Component {
 
   onSquarePress = index => () => {
     this.square[index].measureInWindow((left, top) => {
-      console.log(top, left);
       this.setState({ top, left });
     });
   };
